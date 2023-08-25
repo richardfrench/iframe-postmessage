@@ -1,0 +1,65 @@
+html,
+body {
+  color: #333;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* prevent scrollbar jank during resive with overflow hidden */
+  overflow: hidden;
+}
+
+.resizing-app {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #333;
+  padding: 1rem;
+}
+
+h2 {
+  font-weight: 300;
+  margin: 0;
+  padding: 0.83rem 0;
+}
+
+button {
+  background-color: white;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px 2px rgba(51, 51, 51, 0.1);
+  font-weight: 600;
+  letter-spacing: 0.2ch;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+}
+
+button:disabled {
+  background-color: #ddd;
+}
+
+.button-container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.box {
+  border-radius: 3px;
+  margin-top: 1rem;
+  height: 100px;
+  width: 100%;
+}
+
+.gradient1 {
+  background: linear-gradient(to right, #e7fe0f, #dc35a0);
+}
+.gradient2 {
+  background: linear-gradient(to right, #35f0f0, #0f4040);
+}
+.gradient3 {
+  background: linear-gradient(to right, #10c0f0, #c070f0, #f65060);
+}
+.gradient4 {
+  background: linear-gradient(to right, #030020, #7000c0, #f65060, #fff0ff);
+}
+.gradient5 {
+  background: linear-gradient(to right, #e0e060, #45b650);
+}
